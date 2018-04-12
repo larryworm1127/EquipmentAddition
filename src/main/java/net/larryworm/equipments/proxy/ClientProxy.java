@@ -1,6 +1,6 @@
 package net.larryworm.equipments.proxy;
 
-import net.larryworm.equipments.utils.ModUtil;
+import net.larryworm.equipments.util.ModUtil;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;

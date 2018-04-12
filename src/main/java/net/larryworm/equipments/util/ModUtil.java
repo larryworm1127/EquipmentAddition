@@ -1,4 +1,4 @@
-package net.larryworm.equipments.utils;
+package net.larryworm.equipments.util;
 
 import assets.equipmentaddition.creative.CreativeTab;
 

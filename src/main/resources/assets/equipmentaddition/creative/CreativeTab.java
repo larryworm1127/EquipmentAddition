@@ -1,6 +1,6 @@
 package assets.equipmentaddition.creative;
 
-import net.larryworm.equipments.utils.ModUtil;
+import net.larryworm.equipments.util.ModUtil;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;

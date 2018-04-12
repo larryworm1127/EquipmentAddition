@@ -1,4 +1,4 @@
-package net.larryworm.equipments.blocks;
+package net.larryworm.equipments.block;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;

@@ -1,7 +1,7 @@
-package net.larryworm.equipments.blocks;
+package net.larryworm.equipments.block;
 
 import net.larryworm.equipments.EquipmentAddition;
-import net.larryworm.equipments.utils.ModUtil;
+import net.larryworm.equipments.util.ModUtil;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
