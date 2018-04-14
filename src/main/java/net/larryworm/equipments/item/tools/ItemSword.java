@@ -1,6 +1,7 @@
 package net.larryworm.equipments.item.tools;
 
 import net.larryworm.equipments.EquipmentAddition;
+import net.larryworm.equipments.util.ItemUtil;
 import net.larryworm.equipments.util.ModUtil;
 
 public class ItemSword extends net.minecraft.item.ItemSword {
@@ -9,11 +10,19 @@ public class ItemSword extends net.minecraft.item.ItemSword {
 
     public ItemSword(ToolMaterial material, String name) {
         super(material);
-
-        setRegistryName(name);
-        setUnlocalizedName(name);
-        setCreativeTab(ModUtil.CREATIVE_TAB);
         this.name = name;
+
+        this.register();
+    }
+
+    private void register() {
+        ItemUtil.registerItem(this, this.getBaseName());
+
+        //this.registerItemModel();
+    }
+
+    protected String getBaseName() {
+        return this.name;
     }
 
     public void registerItemModel() {
