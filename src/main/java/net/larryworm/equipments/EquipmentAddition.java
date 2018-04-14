@@ -6,7 +6,9 @@ import net.larryworm.equipments.proxy.CommonProxy;
 import net.larryworm.equipments.recipe.InitRecipes;
 import net.larryworm.equipments.util.ModUtil;
 import net.minecraft.block.Block;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
@@ -21,6 +23,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class EquipmentAddition {
 
     public static final Item.ToolMaterial BRONZE_TOOL_MATERIAL = EnumHelper.addToolMaterial("BRONZE", 2, 500, 6, 2, 14);
+    public static final ItemArmor.ArmorMaterial BRONZE_ARMOR_MATERIAL = EnumHelper.addArmorMaterial("COPPER", ModUtil.MOD_ID + ":bronze", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 
     @Mod.Instance(ModUtil.MOD_ID)
     public static EquipmentAddition instance;
@@ -30,7 +33,7 @@ public class EquipmentAddition {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-
+        InitItem.init();
     }
 
     @Mod.EventHandler
