@@ -8,10 +8,10 @@ import net.minecraft.item.Item;
 
 public class ItemUtil {
 
-    public static void registerBlock(Block block, ItemBlockBase itemBlock, String name){
-        block.setUnlocalizedName(name);
+    public static void registerBlock(Block block, ItemBlockBase itemBlock, String name) {
+        block.setUnlocalizedName(ModUtil.MOD_ID + "." + name);
 
-        block.setRegistryName(name);
+        block.setRegistryName(ModUtil.MOD_ID, name);
         RegistryHandler.BLOCKS_TO_REGISTER.add(block);
 
         itemBlock.setRegistryName(block.getRegistryName());
@@ -20,10 +20,10 @@ public class ItemUtil {
         block.setCreativeTab(ModUtil.CREATIVE_TAB);
     }
 
-    public static void registerItem(Item item, String name){
-        item.setUnlocalizedName(name);
+    public static void registerItem(Item item, String name) {
+        item.setUnlocalizedName(ModUtil.MOD_ID + "." + name);
 
-        item.setRegistryName(name);
+        item.setRegistryName(ModUtil.MOD_ID, name);
         RegistryHandler.ITEMS_TO_REGISTER.add(item);
 
         registerItemModel(item, name);

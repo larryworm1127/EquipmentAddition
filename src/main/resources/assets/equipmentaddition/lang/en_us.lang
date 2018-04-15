@@ -1,18 +1,18 @@
 # Items
-item.ingot_copper.name=Copper Ingot
-item.ingot_tin.name=Tin Ingot
-item.ingot_bronze.name=Bronze Ingot
+item.equipmentaddition.ingot_copper.name=Copper Ingot
+item.equipmentaddition.ingot_tin.name=Tin Ingot
+item.equipmentaddition.ingot_bronze.name=Bronze Ingot
 
 # Blocks
-tile.ore_copper.name=Copper Ore
-tile.ore_tin.name=Tin Ore
+tile.equipmentaddition.ore_copper.name=Copper Ore
+tile.equipmentaddition.ore_tin.name=Tin Ore
 
 # Weapons/Tools/Armors
-item.bronze_sword.name=Bronze Sword
-item.bronze_axe.name=Bronze Axe
-item.bronze_pickaxe.name=Bronze Pickaxe
-item.bronze_shovel.name=Bronze Shovel
-item.bronze_helmet.name=Bronze Helmet
-item.bronze_chestplate.name=Bronze Chestplate
-item.bronze_leggings.name=Bronze Leggings
-item.bronze_boots.name=Bronze Boots
+item.equipmentaddition.bronze_sword.name=Bronze Sword
+item.equipmentaddition.bronze_axe.name=Bronze Axe
+item.equipmentaddition.bronze_pickaxe.name=Bronze Pickaxe
+item.equipmentaddition.bronze_shovel.name=Bronze Shovel
+item.equipmentaddition.bronze_helmet.name=Bronze Helmet
+item.equipmentaddition.bronze_chestplate.name=Bronze Chestplate
+item.equipmentaddition.bronze_leggings.name=Bronze Leggings
+item.equipmentaddition.bronze_boots.name=Bronze Boots

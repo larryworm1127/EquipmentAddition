@@ -5,6 +5,7 @@ import net.larryworm.equipments.util.ItemUtil;
 import net.larryworm.equipments.util.ModUtil;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class ItemBase extends Item {
 
@@ -20,10 +21,15 @@ public class ItemBase extends Item {
         ItemUtil.registerItem(this, this.getBaseName());
 
         //this.registerItemModel();
+        this.registerRendering();
     }
 
     protected String getBaseName() {
         return this.name;
+    }
+
+    protected void registerRendering() {
+        EquipmentAddition.proxy.addRenderRegister(new ItemStack(this), this.getRegistryName(), "inventory");
     }
 
     public void registerItemModel() {

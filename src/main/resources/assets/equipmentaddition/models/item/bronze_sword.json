@@ -1,5 +1,5 @@
 {
-  "parent": "item/handheld",
+  "parent": "equipmentaddition:item/handheld_item",
   "textures": {
     "layer0": "equipmentaddition:items/bronze_sword"
   }

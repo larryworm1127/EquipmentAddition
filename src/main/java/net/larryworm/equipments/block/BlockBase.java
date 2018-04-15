@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 
 public class BlockBase extends Block {
 
@@ -20,10 +21,16 @@ public class BlockBase extends Block {
 
     private void register() {
         ItemUtil.registerBlock(this, this.getItemBlock(), this.getBaseName());
+
+        this.registerRendering();
     }
 
     protected String getBaseName() {
         return this.name;
+    }
+
+    public void registerRendering(){
+        EquipmentAddition.proxy.addRenderRegister(new ItemStack(this), this.getRegistryName(), "inventory");
     }
 
     public void registerItemModel(Item itemBlock) {
