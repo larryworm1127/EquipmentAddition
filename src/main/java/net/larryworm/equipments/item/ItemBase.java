@@ -28,6 +28,6 @@ public class ItemBase extends Item {
     }
 
     protected void registerRendering() {
-        EquipmentAddition.proxy.addRenderRegister(this, this.getRegistryName(), "inventory");
+        EquipmentAddition.proxy.addRenderRegister(new ItemStack(this), this.getRegistryName(), "inventory");
     }
 }

@@ -3,6 +3,7 @@ package net.larryworm.equipments.item;
 import net.larryworm.equipments.EquipmentAddition;
 import net.larryworm.equipments.util.ItemUtil;
 import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.item.ItemStack;
 
 public class ItemArmor extends net.minecraft.item.ItemArmor {
 
@@ -26,6 +27,6 @@ public class ItemArmor extends net.minecraft.item.ItemArmor {
     }
 
     protected void registerRendering() {
-        EquipmentAddition.proxy.addRenderRegister(this, this.getRegistryName(), "inventory");
+        EquipmentAddition.proxy.addRenderRegister(new ItemStack(this), this.getRegistryName(), "inventory");
     }
 }

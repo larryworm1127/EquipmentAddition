@@ -30,7 +30,7 @@ public class BlockBase extends Block {
     }
 
     public void registerRendering(){
-        EquipmentAddition.proxy.addRenderRegister(this.createItemBlock(), this.getRegistryName(), "inventory");
+        EquipmentAddition.proxy.addRenderRegister(new ItemStack(this), this.getRegistryName(), "inventory");
     }
 
     public Item createItemBlock() {

@@ -10,7 +10,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent.Register;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.util.ArrayList;
@@ -18,12 +17,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Mod.EventBusSubscriber
 public class RegistryHandler {
 
     public static final List<Block> BLOCKS_TO_REGISTER = new ArrayList<>();
     public static final List<Item> ITEMS_TO_REGISTER = new ArrayList<>();
-    public static final Map<Item, ModelResourceLocation> MODEL_LOCATIONS_FOR_REGISTERING = new HashMap<Item, ModelResourceLocation>();
+    public static final Map<ItemStack, ModelResourceLocation> MODEL_LOCATIONS_FOR_REGISTERING = new HashMap<ItemStack, ModelResourceLocation>();
 
     @SubscribeEvent
     public void onBlockRegistry(Register<Block> event) {
@@ -49,8 +47,8 @@ public class RegistryHandler {
 
     @SubscribeEvent
     public void onModelRegistry(ModelRegistryEvent event) {
-        for(Map.Entry<Item, ModelResourceLocation> entry : MODEL_LOCATIONS_FOR_REGISTERING.entrySet()){
-            ModelLoader.setCustomModelResourceLocation(entry.getKey(), 0, entry.getValue());
+        for(Map.Entry<ItemStack, ModelResourceLocation> entry : MODEL_LOCATIONS_FOR_REGISTERING.entrySet()){
+            ModelLoader.setCustomModelResourceLocation(entry.getKey().getItem(), 0, entry.getValue());
         }
     }
 }

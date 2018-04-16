@@ -6,6 +6,6 @@ import net.minecraft.util.ResourceLocation;
 
 public class CommonProxy {
 
-    public void addRenderRegister(Item item, ResourceLocation location, String variant){
+    public void addRenderRegister(ItemStack stack, ResourceLocation location, String variant){
     }
 }

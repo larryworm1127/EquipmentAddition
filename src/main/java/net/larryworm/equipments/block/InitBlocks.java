@@ -1,9 +1,11 @@
 package net.larryworm.equipments.block;
 
+import net.minecraft.block.Block;
+
 public class InitBlocks {
 
-    public static BlockOre oreCopper;
-    public static BlockOre oreTin;
+    public static Block oreCopper;
+    public static Block oreTin;
 
     public static void init() {
         oreCopper = new BlockOre("ore_copper");

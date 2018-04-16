@@ -2,7 +2,7 @@ package net.larryworm.equipments.item.tools;
 
 import net.larryworm.equipments.EquipmentAddition;
 import net.larryworm.equipments.util.ItemUtil;
-import net.larryworm.equipments.util.ModUtil;
+import net.minecraft.item.ItemStack;
 
 public class ItemSword extends net.minecraft.item.ItemSword {
 
@@ -26,6 +26,6 @@ public class ItemSword extends net.minecraft.item.ItemSword {
     }
 
     protected void registerRendering() {
-        EquipmentAddition.proxy.addRenderRegister(this, this.getRegistryName(), "inventory");
+        EquipmentAddition.proxy.addRenderRegister(new ItemStack(this), this.getRegistryName(), "inventory");
     }
 }
