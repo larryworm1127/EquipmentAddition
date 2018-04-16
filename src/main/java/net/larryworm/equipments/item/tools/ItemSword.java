@@ -18,14 +18,14 @@ public class ItemSword extends net.minecraft.item.ItemSword {
     private void register() {
         ItemUtil.registerItem(this, this.getBaseName());
 
-        //this.registerItemModel();
+        this.registerRendering();
     }
 
     protected String getBaseName() {
         return this.name;
     }
 
-    public void registerItemModel() {
-        EquipmentAddition.proxy.registerItemRenderer(this, 0, name);
+    protected void registerRendering() {
+        EquipmentAddition.proxy.addRenderRegister(this, this.getRegistryName(), "inventory");
     }
 }

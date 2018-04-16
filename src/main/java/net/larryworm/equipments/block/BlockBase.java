@@ -20,7 +20,7 @@ public class BlockBase extends Block {
     }
 
     private void register() {
-        ItemUtil.registerBlock(this, this.getItemBlock(), this.getBaseName());
+        ItemUtil.registerBlock(this, this.createItemBlock(), this.getBaseName());
 
         this.registerRendering();
     }
@@ -30,14 +30,10 @@ public class BlockBase extends Block {
     }
 
     public void registerRendering(){
-        EquipmentAddition.proxy.addRenderRegister(new ItemStack(this), this.getRegistryName(), "inventory");
+        EquipmentAddition.proxy.addRenderRegister(this.createItemBlock(), this.getRegistryName(), "inventory");
     }
 
-    public void registerItemModel(Item itemBlock) {
-        EquipmentAddition.proxy.registerItemRenderer(itemBlock, 0, name);
-    }
-
-    public ItemBlockBase getItemBlock() {
-        return new ItemBlockBase(this);
+    public Item createItemBlock() {
+        return new ItemBlock(this);
     }
 }

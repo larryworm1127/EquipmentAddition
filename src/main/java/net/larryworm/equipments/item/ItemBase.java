@@ -20,7 +20,6 @@ public class ItemBase extends Item {
     private void register() {
         ItemUtil.registerItem(this, this.getBaseName());
 
-        //this.registerItemModel();
         this.registerRendering();
     }
 
@@ -29,10 +28,6 @@ public class ItemBase extends Item {
     }
 
     protected void registerRendering() {
-        EquipmentAddition.proxy.addRenderRegister(new ItemStack(this), this.getRegistryName(), "inventory");
-    }
-
-    public void registerItemModel() {
-        EquipmentAddition.proxy.registerItemRenderer(this, 0, name);
+        EquipmentAddition.proxy.addRenderRegister(this, this.getRegistryName(), "inventory");
     }
 }

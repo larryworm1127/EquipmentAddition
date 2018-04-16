@@ -1,6 +1,6 @@
 package net.larryworm.equipments.util;
 
-import assets.equipmentaddition.creative.CreativeTab;
+import net.larryworm.equipments.creative.CreativeTab;
 
 public class ModUtil {
 

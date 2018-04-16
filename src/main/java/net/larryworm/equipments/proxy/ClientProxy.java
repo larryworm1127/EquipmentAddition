@@ -11,12 +11,7 @@ import net.minecraftforge.client.model.ModelLoader;
 public class ClientProxy extends CommonProxy {
 
     @Override
-    public void registerItemRenderer(Item item, int meta, String id) {
-        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(id, "inventory"));
-    }
-
-    @Override
-    public void addRenderRegister(ItemStack stack, ResourceLocation location, String variant){
-        RegistryHandler.MODEL_LOCATIONS_FOR_REGISTERING.put(stack, new ModelResourceLocation(location, variant));
+    public void addRenderRegister(Item item, ResourceLocation location, String variant){
+        RegistryHandler.MODEL_LOCATIONS_FOR_REGISTERING.put(item, new ModelResourceLocation(location, variant));
     }
 }
