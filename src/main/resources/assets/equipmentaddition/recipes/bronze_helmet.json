@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "B B",
+    "   "
+  ],
+  "key": {
+    "B": {
+      "item": "equipmentaddition:ingot_bronze"
+    }
+  },
+  "result": {
+    "item": "equipmentaddition:bronze_helmet"
+  }
+}
