@@ -2,8 +2,6 @@ package net.larryworm.equipments.item;
 
 import net.larryworm.equipments.EquipmentAddition;
 import net.larryworm.equipments.util.ItemUtil;
-import net.larryworm.equipments.util.ModUtil;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 

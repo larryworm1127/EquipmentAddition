@@ -37,9 +37,14 @@ public class InitItems {
 
     public static Item bronzeArmorPlate;
     public static Item mithrilArmorPlate;
+    public static Item ironArmorPlate;
 
     public static Item bronzeToolBit;
     public static Item mithrilToolBit;
+    public static Item ironToolBit;
+
+    public static Item stoneHammer;
+    public static Item ironHammer;
 
     public static void init() {
         ingotCopper = new ItemBase("ingot_copper");
@@ -71,8 +76,13 @@ public class InitItems {
 
         bronzeArmorPlate = new ItemBase("bronze_armor_plate");
         mithrilArmorPlate = new ItemBase("mithril_armor_plate");
+        ironArmorPlate = new ItemBase("iron_armor_plate");
 
         bronzeToolBit = new ItemBase("bronze_tool_bit");
-        mithrilToolBit = new ItemBase("mithril_toll_bit");
+        mithrilToolBit = new ItemBase("mithril_tool_bit");
+        ironToolBit = new ItemBase("iron_tool_bit");
+
+        stoneHammer = new ItemHammer("stone_hammer");
+        ironHammer = new ItemHammer("iron_hammer");
     }
 }

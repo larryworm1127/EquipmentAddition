@@ -33,10 +33,10 @@ public class RegistryHandler {
     }
 
     @SubscribeEvent
-    public void onItemRegistry(Register<Item> event){
+    public void onItemRegistry(Register<Item> event) {
         InitItems.init();
 
-        for(Item item : ITEMS_TO_REGISTER){
+        for (Item item : ITEMS_TO_REGISTER) {
             event.getRegistry().register(item);
         }
 

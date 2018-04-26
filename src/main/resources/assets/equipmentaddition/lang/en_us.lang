@@ -6,6 +6,8 @@ item.ingot_bronze.name=Bronze Ingot
 # Blocks
 tile.ore_copper.name=Copper Ore
 tile.ore_tin.name=Tin Ore
+tile.metal_forge.name=Metal Forge
+tile.counter.name=Counter
 
 # Weapons/Tools/Armors
 item.bronze_sword.name=Bronze Sword

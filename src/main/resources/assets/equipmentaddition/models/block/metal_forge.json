@@ -1,0 +1,91 @@
+{
+  "textures": {
+    "metal_forge": "blocks/stonebrick",
+    "particle": "blocks/stonebrick"
+  },
+  "elements": [
+    {
+      "from": [3, 0, 3],
+      "to": [13, 11, 13],
+      "faces": {
+        "down": {
+          "uv": [0, 0, 10, 10],
+          "texture": "#metal_forge",
+          "cullface": "down"
+        },
+        "north": {
+          "uv": [0, 0, 10, 11],
+          "texture": "#metal_forge"
+        },
+        "south": {
+          "uv": [0, 0, 10, 11],
+          "texture": "#metal_forge"
+        },
+        "west": {
+          "uv": [0, 0, 10, 11],
+          "texture": "#metal_forge"
+        },
+        "east": {
+          "uv": [0, 0, 10, 11],
+          "texture": "#metal_forge"
+        }
+      }
+    },
+    {
+      "from": [2, 11, 2],
+      "to": [14, 12, 14],
+      "faces": {
+        "down": {
+          "uv": [0, 0, 12, 12],
+          "texture": "#metal_forge"
+        },
+        "north": {
+          "uv": [0, 0, 12, 1],
+          "texture": "#metal_forge"
+        },
+        "south": {
+          "uv": [0, 0, 12, 1],
+          "texture": "#metal_forge"
+        },
+        "west": {
+          "uv": [0, 0, 12, 1],
+          "texture": "#metal_forge"
+        },
+        "east": {
+          "uv": [0, 0, 12, 1],
+          "texture": "#metal_forge"
+        }
+      }
+    },
+    {
+      "from": [1, 12, 1],
+      "to": [15, 13, 15],
+      "faces": {
+        "down": {
+          "uv": [0, 0, 14, 14],
+          "texture": "#metal_forge"
+        },
+        "up": {
+          "uv": [0, 0, 14, 14],
+          "texture": "#metal_forge"
+        },
+        "north": {
+          "uv": [0, 0, 14, 1],
+          "texture": "#metal_forge"
+        },
+        "south": {
+          "uv": [0, 0, 14, 1],
+          "texture": "#metal_forge"
+        },
+        "west": {
+          "uv": [0, 0, 14, 1],
+          "texture": "#metal_forge"
+        },
+        "east": {
+          "uv": [0, 0, 14, 1],
+          "texture": "#metal_forge"
+        }
+      }
+    }
+  ]
+}

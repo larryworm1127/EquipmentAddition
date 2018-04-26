@@ -1,5 +1,6 @@
 package net.larryworm.equipments;
 
+import net.larryworm.equipments.inventory.GuiHandler;
 import net.larryworm.equipments.materials.InitArmorMaterial;
 import net.larryworm.equipments.materials.InitToolMaterial;
 import net.larryworm.equipments.proxy.CommonProxy;
@@ -32,6 +33,7 @@ public class EquipmentAddition {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         InitRecipes.init();
+        GuiHandler.init();
 
         RegistryHandler.BLOCKS_TO_REGISTER.clear();
     }

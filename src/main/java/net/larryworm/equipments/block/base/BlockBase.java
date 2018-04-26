@@ -1,4 +1,4 @@
-package net.larryworm.equipments.block;
+package net.larryworm.equipments.block.base;
 
 import net.larryworm.equipments.EquipmentAddition;
 import net.larryworm.equipments.util.ItemUtil;

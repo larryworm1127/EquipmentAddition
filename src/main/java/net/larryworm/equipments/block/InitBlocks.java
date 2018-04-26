@@ -6,9 +6,13 @@ public class InitBlocks {
 
     public static Block oreCopper;
     public static Block oreTin;
+    public static Block counter;
+    public static Block metalForge;
 
     public static void init() {
         oreCopper = new BlockOre("ore_copper");
         oreTin = new BlockOre("ore_tin");
+        counter = new BlockCounter();
+        metalForge = new BlockMetalForge();
     }
 }

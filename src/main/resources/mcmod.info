@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "equipmentaddition",
+  "name": "Equipment Addition",
+  "description": "Mod that adds extra tools and armor, as well as new recipes for them.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["larryworm"],
+  "credits": "The Forge and FML guys, for allowing modding to be easier",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
