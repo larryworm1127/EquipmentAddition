@@ -3,7 +3,7 @@
   "defaults": {
     "model": "minecraft:cube_all",
     "textures": {
-      "all": "equipmentaddition:blocks/ore_copper"
+      "all": "equipmentaddition:blocks/ore_silver"
     },
     "transform": "forge:default-block"
   },

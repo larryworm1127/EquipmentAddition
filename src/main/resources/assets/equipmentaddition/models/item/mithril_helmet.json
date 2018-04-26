@@ -1,0 +1,6 @@
+{
+  "parent": "equipmentaddition:item/standard_item",
+  "textures": {
+    "layer0": "equipmentaddition:items/mithril_helmet"
+  }
+}

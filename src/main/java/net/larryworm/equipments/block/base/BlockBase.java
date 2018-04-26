@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 
-public class BlockBase extends Block {
+public class BlockBase extends Block implements IHasModel {
 
     protected String name;
 

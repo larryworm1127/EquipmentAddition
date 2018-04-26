@@ -15,4 +15,9 @@ public class CreativeTab extends CreativeTabs {
     public ItemStack getTabIconItem() {
         return new ItemStack(InitItems.bronzeAxe);
     }
+
+    @Override
+    public boolean hasSearchBar() {
+        return true;
+    }
 }

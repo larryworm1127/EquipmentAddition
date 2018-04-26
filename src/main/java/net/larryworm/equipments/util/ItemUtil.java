@@ -12,7 +12,7 @@ public class ItemUtil {
         block.setRegistryName(ModUtil.MOD_ID, name);
         RegistryHandler.BLOCKS_TO_REGISTER.add(block);
 
-        itemBlock.setRegistryName(block.getRegistryName());
+        itemBlock.setRegistryName(name);
         RegistryHandler.ITEMS_TO_REGISTER.add(itemBlock);
 
         block.setCreativeTab(ModUtil.CREATIVE_TAB);

@@ -39,6 +39,7 @@ public class EquipmentAddition {
         network.registerMessage(new PacketUpdateMetalForge.Handler(), PacketUpdateMetalForge.class, 0, Side.CLIENT);
         network.registerMessage(new PacketRequestUpdateMetalForge.Handler(), PacketRequestUpdateMetalForge.class, 1, Side.SERVER);
 
+        proxy.preInit(event);
         proxy.registerRenderers();
     }
 
