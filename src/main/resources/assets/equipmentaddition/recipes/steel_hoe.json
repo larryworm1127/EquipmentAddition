@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TT ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "T": {
+      "item": "equipmentaddition:steel_tool_bit"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "equipmentaddition:steel_hoe",
+    "count": 1
+  }
+}

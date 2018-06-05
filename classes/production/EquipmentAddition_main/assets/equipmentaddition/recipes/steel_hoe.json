@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["TT ", " S ", " S "], "key": {"T": {"item": "equipmentaddition:ingot_steel"}, "S": {"item": "minecraft:stick"}}, "result": {"item": "equipmentaddition:steel_hoe", "count": 1}}

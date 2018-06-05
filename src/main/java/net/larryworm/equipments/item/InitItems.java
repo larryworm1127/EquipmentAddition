@@ -65,9 +65,17 @@ public class InitItems {
     public static Item bronzeArmorPlate;
     public static Item mithrilArmorPlate;
     public static Item ironArmorPlate;
+    public static Item steelArmorPlate;
+    public static Item copperArmorPlate;
+    public static Item tinArmorPlate;
+    public static Item silverArmorPlate;
     public static Item bronzeToolBit;
     public static Item mithrilToolBit;
     public static Item ironToolBit;
+    public static Item steelToolBit;
+    public static Item copperToolBit;
+    public static Item tinToolBit;
+    public static Item silverToolBit;
 
 
     public static void init() {
@@ -123,8 +131,16 @@ public class InitItems {
         bronzeArmorPlate = new ItemBase("bronze_armor_plate", TypeUtil.CRAFTING);
         mithrilArmorPlate = new ItemBase("mithril_armor_plate", TypeUtil.CRAFTING);
         ironArmorPlate = new ItemBase("iron_armor_plate", TypeUtil.CRAFTING);
+        steelArmorPlate = new ItemBase("steel_armor_plate", TypeUtil.CRAFTING);
+        copperArmorPlate = new ItemBase("copper_armor_plate", TypeUtil.CRAFTING);
+        tinArmorPlate = new ItemBase("tin_armor_plate", TypeUtil.CRAFTING);
+        silverArmorPlate = new ItemBase("silver_armor_plate", TypeUtil.CRAFTING);
         bronzeToolBit = new ItemBase("bronze_tool_bit", TypeUtil.CRAFTING);
         mithrilToolBit = new ItemBase("mithril_tool_bit", TypeUtil.CRAFTING);
         ironToolBit = new ItemBase("iron_tool_bit", TypeUtil.CRAFTING);
+        steelToolBit = new ItemBase("steel_tool_bit", TypeUtil.CRAFTING);
+        copperToolBit = new ItemBase("copper_tool_bit", TypeUtil.CRAFTING);
+        tinToolBit = new ItemBase("tin_tool_bit", TypeUtil.CRAFTING);
+        silverToolBit = new ItemBase("silver_tool_bit", TypeUtil.CRAFTING);
     }
 }
