@@ -2,6 +2,7 @@ package net.larryworm.equipments.item.tools;
 
 import net.larryworm.equipments.item.ItemBase;
 import net.larryworm.equipments.tile.TileEntityMetalForge;
+import net.larryworm.equipments.util.TypeUtil;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumActionResult;
@@ -12,8 +13,9 @@ import net.minecraft.world.World;
 
 public class ItemHammer extends ItemBase {
 
-    public ItemHammer(String name) {
-        super(name);
+
+    public ItemHammer(String name, TypeUtil type) {
+        super(name, type);
 
         this.setMaxStackSize(1);
     }
@@ -28,6 +30,6 @@ public class ItemHammer extends ItemBase {
 
             return EnumActionResult.FAIL;
         }
-        return EnumActionResult.PASS;
+        return EnumActionResult.FAIL;
     }
 }

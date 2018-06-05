@@ -30,7 +30,7 @@ public class ClientProxy extends CommonProxy {
     }
 
     @Override
-    public void addRenderRegister(ItemStack stack, ResourceLocation location, String variant){
+    public void addRenderRegister(ItemStack stack, ResourceLocation location, String variant) {
         ClientRegistryHandler.MODEL_LOCATIONS_FOR_REGISTERING.put(stack, new ModelResourceLocation(location, variant));
     }
 

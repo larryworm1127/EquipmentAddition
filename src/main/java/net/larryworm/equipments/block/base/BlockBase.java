@@ -29,7 +29,7 @@ public class BlockBase extends Block implements IHasModel {
         return this.name;
     }
 
-    public void registerRendering(){
+    public void registerRendering() {
         EquipmentAddition.proxy.addRenderRegister(new ItemStack(this), this.getRegistryName(), "inventory");
     }
 

@@ -20,7 +20,7 @@ public class RegistryHandler {
     public void onBlockRegistry(Register<Block> event) {
         InitBlocks.init();
 
-        for(Block block : BLOCKS_TO_REGISTER){
+        for (Block block : BLOCKS_TO_REGISTER) {
             event.getRegistry().register(block);
         }
     }

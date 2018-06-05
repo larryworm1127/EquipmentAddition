@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "equipmentaddition:bronze_tool_bit"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "equipmentaddition:bronze_shovel"
+  }
+}

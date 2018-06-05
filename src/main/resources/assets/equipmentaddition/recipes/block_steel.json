@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "equipmentaddition:ingot_steel"
+    }
+  },
+  "result": {
+    "item": "equipmentaddition:block_steel",
+    "count": 1
+  }
+}

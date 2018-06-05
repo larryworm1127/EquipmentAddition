@@ -15,6 +15,7 @@ import javax.annotation.Nullable;
 
 public class TileEntityMetalForge extends TileEntityBase {
 
+    public long lastChangeTime;
     public ItemStackHandler inventory = new ItemStackHandler(1) {
         @Override
         protected void onContentsChanged(int slot) {
@@ -24,8 +25,6 @@ public class TileEntityMetalForge extends TileEntityBase {
             }
         }
     };
-
-    public long lastChangeTime;
 
     public TileEntityMetalForge(String name) {
         super(name);

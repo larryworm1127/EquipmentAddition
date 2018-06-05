@@ -1,14 +1,16 @@
 package net.larryworm.equipments.recipe;
 
-import net.larryworm.equipments.block.InitBlocks;
-import net.larryworm.equipments.item.InitItems;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import static net.larryworm.equipments.block.InitBlocks.*;
+import static net.larryworm.equipments.item.InitItems.*;
+import static net.larryworm.equipments.util.RecipeUtil.addSmelting;
 
 public class InitRecipes {
 
     public static void init() {
-        GameRegistry.addSmelting(InitBlocks.oreCopper, new ItemStack(InitItems.ingotCopper), 0.7f);
-        GameRegistry.addSmelting(InitBlocks.oreTin, new ItemStack(InitItems.ingotTin), 0.7f);
+        addSmelting(oreTin, new ItemStack(ingotTin), 0.7f);
+        addSmelting(oreSilver, new ItemStack(ingotSilver), 0.7f);
+        addSmelting(oreCopper, new ItemStack(ingotCopper), 0.7f);
     }
 }

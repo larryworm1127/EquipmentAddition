@@ -5,11 +5,15 @@ import net.larryworm.equipments.inventory.GuiHandler;
 import net.larryworm.equipments.item.InitItems;
 import net.larryworm.equipments.item.tools.ItemHammer;
 import net.larryworm.equipments.tile.TileEntityMetalForge;
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -27,9 +31,25 @@ public class BlockMetalForge extends BlockTileEntity<TileEntityMetalForge> {
         super(Material.ROCK, "metal_forge");
     }
 
-    public static ItemStack getToolBitFromIngot(Item ingot) {
-        if (ingot == InitItems.ingotBronze) {
+    private static ItemStack getToolBitFromIngot(Item item) {
+        if (item == InitItems.ingotBronze) {
             return new ItemStack(InitItems.bronzeToolBit);
+        } else if (item == InitItems.ingotMithril) {
+            return new ItemStack(InitItems.mithrilToolBit);
+        } else if (item == Items.IRON_INGOT) {
+            return new ItemStack(InitItems.ironToolBit);
+        }
+
+        return null;
+    }
+
+    private static ItemStack getArmorPlateFromIngot(Block block) {
+        if (block == InitBlocks.blockBronze) {
+            return new ItemStack(InitItems.bronzeArmorPlate);
+        } else if (block == InitBlocks.blockMithril) {
+            return new ItemStack(InitItems.mithrilArmorPlate);
+        } else if (block == Blocks.IRON_BLOCK) {
+            return new ItemStack(InitItems.ironArmorPlate);
         }
 
         return null;
@@ -57,7 +77,12 @@ public class BlockMetalForge extends BlockTileEntity<TileEntityMetalForge> {
                 if (heldItem.getItem() instanceof ItemHammer) {
                     ItemStack stack = itemHandler.getStackInSlot(0);
                     try {
-                        player.addItemStackToInventory((getToolBitFromIngot(stack.getItem())));
+                        Item item = stack.getItem();
+                        if (item instanceof ItemBlock) {
+                            player.addItemStackToInventory(getArmorPlateFromIngot(((ItemBlock) item).getBlock()));
+                        } else {
+                            player.addItemStackToInventory(getToolBitFromIngot(item));
+                        }
                         player.sendMessage(new TextComponentString("Ding!"));
                         itemHandler.extractItem(0, 1, false);
                     } catch (Exception NullPointerException) {

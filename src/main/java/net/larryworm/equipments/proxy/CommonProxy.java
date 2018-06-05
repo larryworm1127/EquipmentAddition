@@ -1,5 +1,6 @@
 package net.larryworm.equipments.proxy;
 
+import net.larryworm.equipments.util.TypeUtil;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.translation.I18n;

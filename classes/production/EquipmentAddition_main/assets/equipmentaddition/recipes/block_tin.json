@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "equipmentaddition:ingot_tin"
+    }
+  },
+  "result": {
+    "item": "equipmentaddition:block_tin",
+    "count": 1
+  }
+}

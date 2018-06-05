@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "B B",
+    "B B"
+  ],
+  "key": {
+    "B": {
+      "item": "equipmentaddition:bronze_armor_plate"
+    }
+  },
+  "result": {
+    "item": "equipmentaddition:bronze_leggings"
+  }
+}
