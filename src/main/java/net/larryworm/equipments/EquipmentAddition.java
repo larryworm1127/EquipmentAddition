@@ -5,9 +5,11 @@ import net.larryworm.equipments.materials.InitArmorMaterial;
 import net.larryworm.equipments.materials.InitToolMaterial;
 import net.larryworm.equipments.network.PacketRequestUpdateMetalForge;
 import net.larryworm.equipments.network.PacketUpdateMetalForge;
+import net.larryworm.equipments.ores.InitOreDict;
 import net.larryworm.equipments.proxy.CommonProxy;
 import net.larryworm.equipments.recipe.InitRecipes;
 import net.larryworm.equipments.util.ModUtil;
+import net.larryworm.equipments.world.WorldGen;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -16,6 +18,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
 @Mod(modid = ModUtil.MOD_ID, name = ModUtil.NAME, version = ModUtil.VERSION)
@@ -41,12 +44,15 @@ public class EquipmentAddition {
 
         proxy.preInit(event);
         proxy.registerRenderers();
+
+        GameRegistry.registerWorldGenerator(new WorldGen(), 3);
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         InitRecipes.init();
         GuiHandler.init();
+        InitOreDict.init();
 
         RegistryHandler.BLOCKS_TO_REGISTER.clear();
     }

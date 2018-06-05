@@ -5,7 +5,7 @@
   "description": "Mod that adds extra tools and armor, as well as new recipes for them.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://github.com/larryworm1127/EquipmentAddition",
   "updateUrl": "",
   "authorList": ["larryworm"],
   "credits": "The Forge and FML guys, for allowing modding to be easier",
