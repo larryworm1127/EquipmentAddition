@@ -1,6 +1,0 @@
-{
-  "parent": "equipmentaddition:item/standard_item",
-  "textures": {
-    "layer0": "equipmentaddition:items/crafting/bronze_armor_plate"
-  }
-}

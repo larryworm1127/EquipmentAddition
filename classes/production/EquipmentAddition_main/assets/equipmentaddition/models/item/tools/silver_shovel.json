@@ -1,6 +1,0 @@
-{
-  "parent": "equipmentaddition:item/handheld_item",
-  "textures": {
-    "layer0": "equipmentaddition:items/tools/silver_shovel"
-  }
-}
