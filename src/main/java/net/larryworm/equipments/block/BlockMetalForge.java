@@ -24,6 +24,7 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 
 import javax.annotation.Nullable;
+import java.util.Objects;
 
 public class BlockMetalForge extends BlockTileEntity<TileEntityMetalForge> {
 
@@ -38,6 +39,14 @@ public class BlockMetalForge extends BlockTileEntity<TileEntityMetalForge> {
             return new ItemStack(InitItems.mithrilToolBit);
         } else if (item == Items.IRON_INGOT) {
             return new ItemStack(InitItems.ironToolBit);
+        } else if (item == InitItems.ingotCopper) {
+            return new ItemStack(InitItems.copperToolBit);
+        } else if (item == InitItems.ingotSilver) {
+            return new ItemStack(InitItems.silverToolBit);
+        } else if (item == InitItems.ingotTin) {
+            return new ItemStack(InitItems.tinToolBit);
+        } else if (item == InitItems.ingotSteel) {
+            return new ItemStack(InitItems.steelToolBit);
         }
 
         return null;
@@ -75,13 +84,14 @@ public class BlockMetalForge extends BlockTileEntity<TileEntityMetalForge> {
             IItemHandler itemHandler = tile.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, side);
             if (!player.isSneaking()) {
                 if (heldItem.getItem() instanceof ItemHammer) {
+                    assert itemHandler != null;
                     ItemStack stack = itemHandler.getStackInSlot(0);
                     try {
                         Item item = stack.getItem();
                         if (item instanceof ItemBlock) {
-                            player.addItemStackToInventory(getArmorPlateFromIngot(((ItemBlock) item).getBlock()));
+                            player.addItemStackToInventory(Objects.requireNonNull(getArmorPlateFromIngot(((ItemBlock) item).getBlock())));
                         } else {
-                            player.addItemStackToInventory(getToolBitFromIngot(item));
+                            player.addItemStackToInventory(Objects.requireNonNull(getToolBitFromIngot(item)));
                         }
                         player.sendMessage(new TextComponentString("Ding!"));
                         itemHandler.extractItem(0, 1, false);
@@ -100,6 +110,7 @@ public class BlockMetalForge extends BlockTileEntity<TileEntityMetalForge> {
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
         TileEntityMetalForge tile = getTileEntity(world, pos);
         IItemHandler itemHandler = tile.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
+        assert itemHandler != null;
         ItemStack stack = itemHandler.getStackInSlot(0);
         if (!stack.isEmpty()) {
             EntityItem item = new EntityItem(world, pos.getX(), pos.getY(), pos.getZ(), stack);
