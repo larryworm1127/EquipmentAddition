@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": ["# #", "###", "###"], "key": {"#": {"item": "equipmentaddition:copper_armor_plate"}}, "result": {"item": "equipmentaddition:copper_chestplate", "count": 1}}

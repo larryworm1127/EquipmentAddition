@@ -60,6 +60,22 @@ public class InitItems {
     public static Item mithrilChestplate;
     public static Item mithrilLeggings;
     public static Item mithrilBoots;
+    public static Item copperHelmet;
+    public static Item copperChestplate;
+    public static Item copperLeggings;
+    public static Item copperBoots;
+    public static Item tinHelmet;
+    public static Item tinChestplate;
+    public static Item tinLeggings;
+    public static Item tinBoots;
+    public static Item steelHelmet;
+    public static Item steelChestplate;
+    public static Item steelLeggings;
+    public static Item steelBoots;
+    public static Item silverHelmet;
+    public static Item silverChestplate;
+    public static Item silverLeggings;
+    public static Item silverBoots;
 
     // Materials
     public static Item bronzeArmorPlate;
@@ -127,6 +143,22 @@ public class InitItems {
         mithrilChestplate = new ItemArmor(InitArmorMaterial.MITHRIL_ARMOR_MATERIAL, EntityEquipmentSlot.CHEST, "mithril_chestplate");
         mithrilLeggings = new ItemArmor(InitArmorMaterial.MITHRIL_ARMOR_MATERIAL, EntityEquipmentSlot.LEGS, "mithril_leggings");
         mithrilBoots = new ItemArmor(InitArmorMaterial.MITHRIL_ARMOR_MATERIAL, EntityEquipmentSlot.FEET, "mithril_boots");
+        copperHelmet = new ItemArmor(InitArmorMaterial.COPPER_ARMOR_MATERIAL, EntityEquipmentSlot.HEAD, "copper_helmet");
+        copperChestplate = new ItemArmor(InitArmorMaterial.COPPER_ARMOR_MATERIAL, EntityEquipmentSlot.CHEST, "copper_chestplate");
+        copperLeggings = new ItemArmor(InitArmorMaterial.COPPER_ARMOR_MATERIAL, EntityEquipmentSlot.LEGS, "copper_leggings");
+        copperBoots = new ItemArmor(InitArmorMaterial.COPPER_ARMOR_MATERIAL, EntityEquipmentSlot.FEET, "copper_boots");
+        tinHelmet = new ItemArmor(InitArmorMaterial.TIN_ARMOR_MATERIAL, EntityEquipmentSlot.HEAD, "tin_helmet");
+        tinChestplate = new ItemArmor(InitArmorMaterial.TIN_ARMOR_MATERIAL, EntityEquipmentSlot.CHEST, "tin_chestplate");
+        tinLeggings = new ItemArmor(InitArmorMaterial.TIN_ARMOR_MATERIAL, EntityEquipmentSlot.LEGS, "tin_leggings");
+        tinBoots = new ItemArmor(InitArmorMaterial.TIN_ARMOR_MATERIAL, EntityEquipmentSlot.FEET, "tin_boots");
+        silverHelmet = new ItemArmor(InitArmorMaterial.SILVER_ARMOR_MATERIAL, EntityEquipmentSlot.HEAD, "silver_helmet");
+        silverChestplate = new ItemArmor(InitArmorMaterial.SILVER_ARMOR_MATERIAL, EntityEquipmentSlot.CHEST, "silver_chestplate");
+        silverLeggings = new ItemArmor(InitArmorMaterial.SILVER_ARMOR_MATERIAL, EntityEquipmentSlot.LEGS, "silver_leggings");
+        silverBoots = new ItemArmor(InitArmorMaterial.SILVER_ARMOR_MATERIAL, EntityEquipmentSlot.FEET, "silver_boots");
+        steelHelmet = new ItemArmor(InitArmorMaterial.STEEL_ARMOR_MATERIAL, EntityEquipmentSlot.HEAD, "steel_helmet");
+        steelChestplate = new ItemArmor(InitArmorMaterial.STEEL_ARMOR_MATERIAL, EntityEquipmentSlot.CHEST, "steel_chestplate");
+        steelLeggings = new ItemArmor(InitArmorMaterial.STEEL_ARMOR_MATERIAL, EntityEquipmentSlot.LEGS, "steel_leggings");
+        steelBoots = new ItemArmor(InitArmorMaterial.STEEL_ARMOR_MATERIAL, EntityEquipmentSlot.FEET, "steel_boots");
 
         bronzeArmorPlate = new ItemBase("bronze_armor_plate", TypeUtil.CRAFTING);
         mithrilArmorPlate = new ItemBase("mithril_armor_plate", TypeUtil.CRAFTING);
